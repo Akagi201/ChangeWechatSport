@@ -1,12 +1,9 @@
+<!-- markdownlint-disable MD041 MD010 MD033 -->
 # 修改微信运动步数
 
 [![Run Step Change](https://github.com/Akagi201/ChangeWechatSport/actions/workflows/runner.yml/badge.svg)](https://github.com/Akagi201/ChangeWechatSport/actions/workflows/runner.yml)
 
 通过 Github Action/[阿里云](https://tianchi.aliyun.com/notebook-ai "不需要magic network")/[Google Colab](https://colab.research.google.com/ "需要magic network")使用 **Zepp Life** app（*原**小米运动**app*）修改微信步数，Github Action 可设置每日定时执行。
-
-> 2022.8.18 亲测成功:ghost:
-
-[![修改微信步数](https://github.com/Caryio/ZeppLifeChangeWechatSport/actions/workflows/RunFunction.yml/badge.svg?branch=main)](https://github.com/Caryio/ZeppLifeChangeWechatSport/actions/workflows/RunFunction.yml)
 
 ## 目录
 
@@ -148,16 +145,16 @@ step = str(randint(10121, 12302))
   
 ## 注意事项
 
-* 不保证一定成功，出问题概不负责嗷:innocent:
-* Github Action 要用`changebushu_action.py`，阿里云和 Google Colab 要用`changebushu.py`，别弄混了。*（不光是环境变量配置的问题，`changebushu_action.py`里删除了很多调试参数输出，以确保不会在`workflow`里输出隐私信息）*
-* Github Action 设置`secrets`时注意要按照上文的步骤弄，***不要***先设置`Environments`然后在里面加变量
-* 实在设置不好可以看上文中不想设置`secrets`如何解决，但是**请先看[声明第四条](#声明)**
+- 不保证一定成功，出问题概不负责嗷:innocent:
+- Github Action 要用`changebushu_action.py`，阿里云和 Google Colab 要用`changebushu.py`，别弄混了。*（不光是环境变量配置的问题，`changebushu_action.py`里删除了很多调试参数输出，以确保不会在`workflow`里输出隐私信息）*
+- Github Action 设置`secrets`时注意要按照上文的步骤弄，***不要***先设置`Environments`然后在里面加变量
+- 实在设置不好可以看上文中不想设置`secrets`如何解决，但是**请先看[声明第四条](#声明)**
 
 <p align="right">（<a href="#修改微信运动步数">回到顶部</a>）</p>
   
 ## 更新日志
 
-*删除了很多 commits 记录，都快被我删没了:rofl:所以在这稍微记录一下*
+删除了很多 commits 记录，都快被我删没了:rofl:所以在这稍微记录一下
 
 - **`v0.1`** 2022.5.11：第一次上传，添加阿里云的使用方法
 - 2022.7.16：添加 Google Colab 的使用方法；部分代码修改
